@@ -7,7 +7,7 @@ import Webcam from "react-webcam";
 
 
 function App() {
-  //settig references
+  //setting references
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const footercanvasRef = useRef(null);

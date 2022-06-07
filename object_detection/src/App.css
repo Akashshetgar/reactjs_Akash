@@ -97,7 +97,7 @@ footer{
 }
 
 .result_canvas{
-  transform: translateY(100px);
+  transform: translateY(0px);
 }
 li{
   margin-left: 20px;
