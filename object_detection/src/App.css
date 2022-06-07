@@ -2,33 +2,109 @@
   text-align: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c0c0c077;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(24, 179, 117);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(5, 180, 163);
 }
 
 .navbar {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 4vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 1px 2px 5px 2px black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
+.main_container{
+  background-color: #d1d0d0c9;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_heading{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(4, 118, 118);
+  font-size: 2rem;
+}
+
+.cam_start{
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgb(28,107,201);
+  background: linear-gradient(40deg, rgba(28,107,201,1) 0%, rgba(53,215,197,1) 100%, rgba(0,212,255,1) 100%);
+  border-color: #61dafb00;
+  font-family: monospace;
+  
+}
+
+.cam_stop{
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgb(131,58,180);
+  background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+  border-color: rgba(253, 29, 29, 0);
+  font-family: monospace;
+ 
+}
+
+footer{
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+  /* border-radius: 3000px 3000px 0px 0px; */
+}
+.footer_links{
+  display: flex;
+  font-family: monospace;
+  font-size: medium;
+  color: aliceblue;
+  /* background-color: #282c34; */
+  
+}
+
+.result_canvas{
+  transform: translateY(100px);
+}
+li{
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style-type:none;
+  font-size: larger;
+}
 link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
